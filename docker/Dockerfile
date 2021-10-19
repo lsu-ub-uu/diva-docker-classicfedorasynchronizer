@@ -1,7 +1,7 @@
 ARG CORA_DOCKER_JAVA_VERSION
 FROM cora-docker-java:${CORA_DOCKER_JAVA_VERSION}
 
-ARG projectname=cora-classicfedorasynchronizer
+ARG projectname=classicfedorasynchronizer
 ARG workdir=/synchronizer
 
 
@@ -12,4 +12,7 @@ COPY /*.properties ${workdir}/properties/
 WORKDIR ${workdir}
 
 CMD java -classpath ${workdir}/properties/:${workdir}/${projectname}.jar \
-se.uu.ub.cora.classicfedorasynchronizer.messaging.MessengerListenerStarter
+se.uu.ub.cora.classicfedorasynchronizer.messaging.MessengerListenerStarter \
+${messaginghostname} ${messagingport} ${messagingroutingKey} ${messagingusername} \
+${messagingpassword} ${databaseurl} ${databaseuser} ${databasepassword}\
+${fedorabaseUrl} ${coraapptokenVerifierUrl} ${corabaseUrl} ${corauserId} ${coraapptoken}
