@@ -41,9 +41,9 @@
 	</properties>
 
 	<scm>
-		<connection>scm:git:https://github.com/lsu-ub-uu/cora-classicfedorasynchronizer.git</connection>
-		<developerConnection>scm:git:https://github.com/lsu-ub-uu/cora-classicfedorasynchronizer.git</developerConnection>
-		<url>https://github.com/lsu-ub-uu/cora-classicfedorasynchronizer.git</url>
+		<connection>scm:git:https://github.com/lsu-ub-uu/diva-docker-classicfedorasynchronizer.git</connection>
+		<developerConnection>scm:git:https://github.com/lsu-ub-uu/diva-docker-classicfedorasynchronizer.git</developerConnection>
+		<url>https://github.com/lsu-ub-uu/diva-docker-classicfedorasynchronizer.git</url>
 	</scm>
 
 	<dependencies>
